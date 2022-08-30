@@ -6,12 +6,13 @@
 }
 body {
   background-color: #c2b8b8;
-  height: 300vh;
 }
 /* img {
   width: 20%;
 } */
 header {
+  width: auto;
+  height: 4vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +21,7 @@ header {
   background-color: white;
   border-radius: 50px;
   position: sticky;
+  /* max-width: fit-content; */
 }
 .logo {
   cursor: pointer;
@@ -51,4 +53,88 @@ nav ul li a:hover {
 .call-now-btn:hover {
   background-color: rgba(161, 87, 220, 0.8);
   color: black;
+}
+
+.herosection {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 70px 30px;
+}
+.herotext {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.heroimg img {
+  width: 100%;
+  height: 60vh;
+  border-radius: 50px;
+  filter: drop-shadow(10px 10px 10px gray);
+  transition: all 1s ease 0s;
+}
+.heroimg img:hover {
+  border-radius: 50px;
+  transform: scale(1.2);
+}
+.contactsection {
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+}
+.contactimg {
+  height: 70h;
+  width: 30vw;
+  transition: all 1s ease 0s;
+}
+.contactimg:hover {
+  transform: scale(1.2);
+}
+fieldset {
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+  font-size: 42px;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #a157dc;
+  color: white;
+}
+label {
+  color: white;
+}
+input[type="text"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.contactform {
+  padding: 30px;
+  margin: 40px;
+  height: 60vh;
+  width: 30vw;
+  background-color: #a157dc;
+  border-radius: 50px;
+  min-height: 60vh;
 }
